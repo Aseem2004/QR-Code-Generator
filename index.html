@@ -10,7 +10,7 @@
     <div class="carousel">
         <div class="header">    <!--containg input and size of QR-->
             <h1>QR Code Generator</h1>
-            <input type="text" placeholder="Enter Your Text/URL">
+            <input type="text" placeholder="Enter Your Text/URL" id="txt">
             <div>
             <label for="size">Select Size of QR:</label>
             <select  id="size">
@@ -31,9 +31,10 @@
 
         </div> 
         <div class="footer">    <!--contains generate and download button-->
-            <a href="">Generate QR</a>
-            <a href="">Download QR</a>
+            <a href="" id="GenerateBtn">Generate QR</a>
+            <a href="" id="DownloadBtn">Download QR</a>
         </div> 
     </div>
+    <script src="index.js"></script>
 </body>
 </html>
