@@ -7,20 +7,12 @@ const qrContainer=document.querySelector(".body");
 let s=sizes.value;
 GenerateBtn.addEventListener("click",(e)=>{
     e.preventDefault();
-    // if(qrText.value.length)
+    qrText.value.length > 0 ? generateQRCode() : alert("Enter the text or URL to generate your QR code");;
     generateQRCode();
 });
 
-// function generateQRCode(){
-//     new QRcode(qrContainer,{
-//         text:qrText.value,
-//         height:s,
-//         width:s,
-//         colorDark:"#000",
-//         colorLight:"#fff",
-//     });
-// }
 function generateQRCode(){
+    qrContainer.innerHTML = "";
     new QRCode(qrContainer, {
         text:qrText.value,
         height:s,
@@ -29,3 +21,8 @@ function generateQRCode(){
         colorDark:"#000",
     });
 }
+
+sizes.addEventListener('change',(e)=>{
+    s=e.target.value;
+    generateQRCode;
+});

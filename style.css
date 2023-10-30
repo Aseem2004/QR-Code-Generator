@@ -52,6 +52,21 @@ body{
     justify-content: space-between;
 }
 
+.body{
+    display: grid;
+    place-items: center;
+    padding: 18px;
+}
+
+.body img{
+    max-height: 100%;
+    max-width: 100%;
+    margin-block: 10px;
+    padding: 18px;
+    border: 0.5px solid #fff;
+    border-radius: 10px;
+}
+
 .footer a{
     text-decoration: none;
     background-color: #fff;
