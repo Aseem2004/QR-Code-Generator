@@ -82,3 +82,13 @@ body{
     display: flex;
     justify-content: center;
 }
+
+@media screen and (max-width:520px){
+    .carousel{
+        width: 80%;
+    }
+    .footer a{
+        padding: 12px;
+        font-size: 16px;
+    }
+}
