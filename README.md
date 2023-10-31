@@ -1,1 +1,2 @@
-# QR-Code-Generator
+# QR Code Generator
+<p>I'm thrilled to present my most recent project, a QR Code Generator that helps create QR code according to user specifications. I utilised the Cross-browser QRCode generator JavaScript library for making this project.</p>
